@@ -1,0 +1,38 @@
+{
+  "name": "@app/web",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "[ -e .env ] && set -a && . ./.env; next dev --turbo",
+    "build": "next build",
+    "start": "[ -e .env ] && set -a && . ./.env; next start",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "deps:update": "npm-check-updates -u"
+  },
+  "dependencies": {
+    "@clerk/backend": "0.38.2",
+    "@clerk/nextjs": "^4.29.8",
+    "@clerk/themes": "^1.7.9",
+    "@headlessui/react": "^1.7.18",
+    "@heroicons/react": "^2.1.1",
+    "@lib/db": "*",
+    "@tailwindcss/forms": "^0.5.7",
+    "@vercel/analytics": "^1.2.2",
+    "lucide-react": "0.343.0",
+    "next": "^14.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-parallax-tilt": "^1.7.212"
+  },
+  "devDependencies": {
+    "@cfg/eslint-config-base": "*",
+    "@cfg/tailwind-config": "*",
+    "@cfg/tsconfig": "*",
+    "cross-env": "^7.0.3",
+    "env-cmd": "^10.1.0",
+    "eslint-plugin-tailwindcss": "^3.14.3",
+    "next-transpile-modules": "10.0.1",
+    "zod": "^3.22.4"
+  }
+}

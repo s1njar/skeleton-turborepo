@@ -1,0 +1,37 @@
+{
+  "version": "5",
+  "dialect": "mysql",
+  "id": "29450fa1-d9f7-44df-b9aa-d93717ef574f",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "tables": {
+    "base": {
+      "name": "base",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {
+        "deployment_id": {
+          "name": "deployment_id",
+          "columns": [
+            "id"
+          ]
+        }
+      },
+      "uniqueConstraints": {}
+    }
+  },
+  "schemas": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  }
+}

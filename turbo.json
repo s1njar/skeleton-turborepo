@@ -1,0 +1,26 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**"]
+    },
+    "lint": {
+      "outputs": []
+    },
+    "lint:fix": {
+      "outputs": []
+    },
+    "dev": {
+      "cache": false
+    },
+    "tsc": {
+      "outputs": []
+    },
+    "deps:update": {
+      "cache": false
+    }
+  },
+  "globalEnv": ["DATABASE_URL", "NEXTAUTH_URL"],
+  "globalDependencies": [".env"]
+}

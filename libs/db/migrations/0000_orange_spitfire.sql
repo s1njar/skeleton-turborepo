@@ -1,0 +1,3 @@
+CREATE TABLE `base` (
+	`id` bigint AUTO_INCREMENT NOT NULL
+);
